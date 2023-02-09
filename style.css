@@ -4,12 +4,22 @@ body {
   border: 0px;
 }
 
-.container {
+main {
   display: grid;
   grid-template-areas:
-    "article aside"
-    "div aside";
-  grid-template-rows: 50vh 50vh;
+    "header header"
+    "div div"
+    "img article"
+    "aside aside"
+    "footer footer";
+  grid-template-rows: 50vh;
+}
+
+aside {
+  display: grid;
+  grid-template-areas:
+    ".prep"
+    ".brais";
 }
 
 h1 {

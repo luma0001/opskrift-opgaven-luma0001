@@ -1,0 +1,39 @@
+main {
+  background-color: aquamarine;
+}
+
+section {
+  background-color: red;
+  display: grid;
+  grid-template-areas:
+    "#dish #dish"
+    "nav aside";
+  grid-template-rows: 10vh;
+}
+
+nav {
+  display: grid;
+  grid-template-areas: "ingredient" "#image";
+}
+
+#dish {
+  background-color: blueviolet;
+}
+
+#image {
+  background-color: paleturquoise;
+}
+
+#ingredient {
+  background-color: yellow;
+}
+
+aside {
+  background-color: green;
+  display: grid;
+  grid-template-areas: "#prep" "#brais";
+}
+
+#footer {
+  background-color: violet;
+}
