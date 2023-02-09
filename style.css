@@ -1,0 +1,54 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "article aside"
+    "div aside";
+  grid-template-rows: 50vh 50vh;
+}
+
+h1 {
+  color: orange;
+}
+
+header {
+  margin: 25px;
+  background-color: grey;
+}
+
+back-ground {
+  color: beige;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#element01 {
+  background-color: green;
+}
+
+#element02 {
+  background-color: blue;
+}
+
+#element03 {
+  background-color: red;
+}
+
+.element {
+  border: 1px solid rbga(0, 0, 0, 0.8);
+  border: padding 20px;
+  /* text-align: center; */
+}
+
+footer {
+  margin: 25px;
+  background-color: grey;
+}
