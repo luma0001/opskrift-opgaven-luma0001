@@ -15,11 +15,20 @@ main {
   grid-template-rows: 50vh;
 }
 
+article {
+  grid-area: article;
+}
+
 aside {
+  grid-area: aside;
   display: grid;
   grid-template-areas:
-    ".prep"
-    ".brais";
+    "prep"
+    "brais";
+}
+
+div {
+  grid-area: div;
 }
 
 h1 {
@@ -27,8 +36,13 @@ h1 {
 }
 
 header {
+  grid-area: header;
   margin: 25px;
   background-color: grey;
+}
+
+footer {
+  grid-area: footer;
 }
 
 back-ground {
@@ -45,11 +59,20 @@ ul {
 }
 
 #element02 {
+  grid-area: img;
   background-color: blue;
 }
 
 #element03 {
   background-color: red;
+}
+
+.prep {
+  grid-area: prep;
+}
+
+.brais {
+  grid-area: brais;
 }
 
 .element {

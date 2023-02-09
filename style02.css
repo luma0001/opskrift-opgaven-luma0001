@@ -1,39 +1,46 @@
 main {
-  background-color: aquamarine;
-}
-
-section {
-  background-color: red;
   display: grid;
   grid-template-areas:
-    "#dish #dish"
-    "nav aside";
-  grid-template-rows: 10vh;
+    "header"
+    "nav"
+    "article"
+    "aside"
+    "footer";
+  grid-template-rows: 20vh 70vh 10vh;
+}
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav article aside"
+      "footer footer footer";
+    grid-template-rows: 20vh 70vh 10vh;
+  }
+}
+
+header {
+  grid-area: header;
+  background-color: aqua;
 }
 
 nav {
-  display: grid;
-  grid-template-areas: "ingredient" "#image";
-}
-
-#dish {
+  grid-area: nav;
   background-color: blueviolet;
 }
 
-#image {
-  background-color: paleturquoise;
-}
-
-#ingredient {
-  background-color: yellow;
+article {
+  grid-area: article;
+  background-color: red;
 }
 
 aside {
-  background-color: green;
-  display: grid;
-  grid-template-areas: "#prep" "#brais";
+  grid-area: aside;
+  background-color: yellow;
 }
 
-#footer {
-  background-color: violet;
+footer {
+  grid-area: footer;
+  background-color: papayawhip;
 }
