@@ -1,3 +1,12 @@
+body {
+  padding: 10px;
+  background-color: azure;
+}
+
+ul {
+  list-style-type: none;
+}
+
 main {
   display: grid;
   grid-template-areas:
@@ -13,6 +22,7 @@ main {
   main {
     display: grid;
     grid-template-areas:
+      /* "h1 h1 h1" */
       "header header header"
       "nav article aside"
       "footer footer footer";
@@ -22,25 +32,55 @@ main {
 
 header {
   grid-area: header;
-  background-color: aqua;
+  background-color: lemonchiffon;
+  padding: 10px;
+}
+
+header b {
+  color: orangered;
+}
+
+section {
+  background-color: azure;
+  display: grid;
+  grid-template-areas: "nav" "image";
+  padding: 10px;
+  padding-bottom: 10px;
 }
 
 nav {
   grid-area: nav;
-  background-color: blueviolet;
+  background-color: rgb(19, 19, 52);
+  color: white;
+}
+
+nav h3 {
+  padding-left: 10px;
+}
+
+img {
+  grid-area: image;
+  background-position: center center;
+  max-width: 80%;
+  margin: 20 px;
 }
 
 article {
   grid-area: article;
-  background-color: red;
+  background-color: rgb(53, 82, 133);
+  color: white;
+  padding: 10px;
 }
 
 aside {
   grid-area: aside;
-  background-color: yellow;
+  background-color: rgb(19, 19, 52);
+  color: white;
+  padding: 10px;
 }
 
 footer {
   grid-area: footer;
-  background-color: papayawhip;
+  background-color: lemonchiffon;
+  text-align: center;
 }
