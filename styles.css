@@ -1,0 +1,41 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "top top"
+    "topleft topright"
+    "botleft botright"
+    "footer footer";
+}
+
+header {
+  background-color: lightgreen;
+  grid-area: "header";
+}
+
+#top {
+  grid-area: "top";
+  background-color: rgb(255, 245, 240);
+}
+
+#topright {
+  grid-area: "topright";
+  background-color: rgb(240, 255, 240);
+}
+#botrigth {
+  grid-area: "botright";
+  background-color: rgb(255, 240, 251);
+}
+#topleft {
+  grid-area: "topleft";
+  background-color: rgb(255, 255, 240);
+}
+#botleft {
+  grid-area: "botleft";
+  background-color: rgb(240, 240, 255);
+}
+
+footer {
+  grid-area: "footer";
+  background-color: grey;
+}

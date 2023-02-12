@@ -1,13 +1,14 @@
 body {
   padding: 10px;
-  background-color: azure;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRF5lgLtmn4U-QIL1JlHGZgetTmM5FHCZcR7PLIsgy4Lnt_8KeZQ1ZYDqEMwczn_DKRQ4&usqp=CAU");
+  /* background-color: #cccccc; */
 }
 
 ul {
   list-style-type: none;
 }
 
-main {
+/* main {
   display: grid;
   grid-template-areas:
     "header"
@@ -16,15 +17,14 @@ main {
     "aside"
     "footer";
   grid-template-rows: 20vh 70vh 10vh;
-}
+} */
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   main {
     display: grid;
     grid-template-areas:
-      /* "h1 h1 h1" */
       "header header header"
-      "nav article aside"
+      "section article aside"
       "footer footer footer";
     grid-template-rows: 20vh 70vh 10vh;
   }
@@ -34,35 +34,34 @@ header {
   grid-area: header;
   background-color: lemonchiffon;
   padding: 10px;
+  border-radius: 25px;
 }
 
 header b {
-  color: orangered;
+  color: darkred;
 }
 
 section {
-  background-color: azure;
   display: grid;
-  grid-template-areas: "nav" "image";
-  padding: 10px;
-  padding-bottom: 10px;
+  grid-template-areas: "nav" "image1";
 }
 
 nav {
   grid-area: nav;
   background-color: rgb(19, 19, 52);
   color: white;
+  border-radius: 25px;
 }
 
 nav h3 {
   padding-left: 10px;
 }
 
-img {
-  grid-area: image;
-  background-position: center center;
-  max-width: 80%;
-  margin: 20 px;
+#img01 {
+  grid-area: image1;
+  height: 200px;
+  width: 300px;
+  padding-left: 200px;
 }
 
 article {
@@ -70,12 +69,14 @@ article {
   background-color: rgb(53, 82, 133);
   color: white;
   padding: 10px;
+  border-radius: 25px;
 }
 
 aside {
   grid-area: aside;
   background-color: rgb(19, 19, 52);
   color: white;
+  border-radius: 25px;
   padding: 10px;
 }
 
@@ -83,4 +84,5 @@ footer {
   grid-area: footer;
   background-color: lemonchiffon;
   text-align: center;
+  border-radius: 25px;
 }
